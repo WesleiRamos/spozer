@@ -1,7 +1,7 @@
 <p align="center">
-	<br /> <br />
+	<br /> <br /> <br /> <br />
 	<img src="https://raw.github.com/WesleiRamos/spozer/main/public/assets/images/spozer.png" />
-	<br /> <br />
+	<br /> <br /> <br /> <br />
 </p>
 
 Spozer é um projeto feito para disciplina de "Programação Web" do 3º período de TADS, a ideia é criar um app de streaming de música como spotify e deezer (por isso o nome Spozer).
