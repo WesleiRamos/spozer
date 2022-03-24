@@ -1,0 +1,152 @@
+.content {
+  grid-area: content;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(35, 35, 35);
+  scroll-behavior: smooth;
+}
+
+.toolbar {
+  box-sizing: border-box;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  padding: 20px 10px;
+  margin-left: -20px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.toolbar .tools {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar .tools > * {
+  margin-left: 20px;
+}
+
+.toolbar a, 
+.toolbar a:visited,
+.toolbar a:active,
+.toolbar a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.toolbar .picture {
+  width: 40px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.search-box {
+  padding: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.search-box input {
+  color: #f0f0f0;
+  border: none;
+  margin-left: 20px;
+  outline: none;
+  width: 50vw;
+  max-width: 400px;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+
+
+
+
+
+.featured-buttons {
+  display: flex;
+  padding: 10px 0;
+}
+
+.featured-buttons > div {
+  cursor: pointer;
+  user-select: none;
+}
+
+.featured-buttons i {
+  font-size: 30px;
+}
+
+
+
+
+.featured {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 3px 10px rgb(20, 20, 20, 0.4));
+}
+
+.featured .song-card {
+  flex: 0 0 800px;
+  height: 350px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: "name name name" ". . ." "aaa aaa aaa";
+  grid-template-columns: 390px 1fr 390px;
+  grid-template-rows: 150px 40px 1fr;
+  margin-right: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.featured .song-card:hover {
+  opacity: 0.8;
+}
+
+.featured .song-card > div {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.featured .song-card div:not(.name) h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.featured .song-card p {
+  font-size: 14px;
+}
+
+.featured .song-card .name {
+  grid-area: name;
+  font-size: 35px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.featured .song-card .aaa {
+  grid-area: aaa;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 395px 395px;
+}
+
+.featured .song-card .aaa > div {
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.featured .song-card .aaa > div:last-child {
+  text-align: right;
+  text-justify: distribute;
+}

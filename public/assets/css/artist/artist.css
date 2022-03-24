@@ -1,0 +1,99 @@
+.artist-information {
+  margin-top: -92px;
+  margin-left: -20px;
+  width: calc(100% + 20px);
+  user-select: none;
+  margin-bottom: 50px;
+}
+
+.artist-information .cover {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.artist-information .artist-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover !important;
+}
+
+.artist-information .artist-cover-blur {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 35, 35, 0.1);
+  backdrop-filter: blur(15px); /** Não funciona por padrão no firefox **/
+}
+
+.artist-information .artist {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
+  margin-top: -500px;
+  position: relative;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 300px 1fr;
+  z-index: 2;
+}
+
+.artist-information .artist-picture {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  filter: drop-shadow(0 5px 10px rgb(20, 20, 20, 0.5));
+}
+
+.artist-information .artist-picture img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+.artist-information .information-verified {
+  align-items: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20px 1fr;
+}
+
+.artist-information .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter: drop-shadow(0 10px 20px rgb(20, 20, 20, 0.7));
+}
+
+.artist-information .information .artistic-name {
+  font-size: 70px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+
+.artist-information .information-verified i {
+  color: rgb(81 160 255);
+}
+
+.artist-information .information-verified span {
+  font-size: 20px;
+}
+
+
+.artist-production {
+  box-sizing: border-box;
+  margin-left: -20px;
+  width: calc(100% + 20px);
+  margin-top: -130px;
+  padding: 20px;
+  padding-top: 90px;
+  background: linear-gradient(to bottom, rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.8), rgb(35, 35, 35) 200px);
+  position: relative;
+}

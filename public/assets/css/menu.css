@@ -1,0 +1,62 @@
+.app-menu {
+  grid-area: menu;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: rgb(25, 25, 25);
+}
+
+.app-menu ul {
+  list-style: none;
+  user-select: none;
+}
+
+.app-menu li {
+  font-size: 16px;
+  margin: 15px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.app-menu li i {
+  margin-right: 10px;
+}
+
+.app-menu li:hover {
+  color: rgb(200, 200, 200);
+  transition: .2s;
+}
+
+.app-menu li.line {
+  width: 180px;
+  height: 1px;
+  background: rgb(60, 60, 60);
+}
+
+.app-menu .submenu {
+  margin-top: 30px;
+}
+
+.app-menu h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.app-menu .logo {
+  color: white;
+  display: flex;
+  margin: 25px 10px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #FABD43, #FF4259, #8B17FA);
+  mask-image: url(../images/logo.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  position: center;
+  -webkit-mask-image: url(../images/logo.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  width: 150px;
+  height: 50px;
+}

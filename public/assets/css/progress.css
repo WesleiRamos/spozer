@@ -1,0 +1,21 @@
+.progress-bar {
+  animation: pogressBar 5s ease infinite;
+  background: linear-gradient(to left, #FABD43, #8B17FA, #FF4259, #FABD43);
+  background-size: 300% 100%;
+  height: 2px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  z-index: 3;
+}
+
+@keyframes pogressBar {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: 300%;
+  }
+}

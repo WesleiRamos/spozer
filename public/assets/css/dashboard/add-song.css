@@ -1,0 +1,12 @@
+.add-song {
+  padding-right: 20px;
+}
+
+.add-song h2.title {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.artists-chips {
+  margin-top: -15px;
+}

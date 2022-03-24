@@ -1,0 +1,15 @@
+.my-songs > div {
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  grid-template-columns: 20px 1fr 1fr 1fr 50px 50px;
+}
+
+.my-songs .song {
+  margin-bottom: 10px;
+}
+
+.my-songs .song i {
+  cursor: pointer;
+  user-select: none;
+}

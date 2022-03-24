@@ -1,0 +1,129 @@
+.album-information {
+  padding: 40px 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 250px 1fr;
+}
+
+/** Artwork **/
+.album-information .album-artwork {
+  width: 230px;
+  height: 230px;
+  border-radius: 5px;
+  overflow: hidden;
+  filter: drop-shadow(0 2px 20px rgb(20, 10, 20, 0.3));
+}
+
+.album-information .album-artwork img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+/** informações **/
+.album-information .information {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 50px 1fr;
+  height: 230px;
+}
+
+
+/** nome **/
+.album-information .album-name {
+  font-size: 70px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  height: 100px;
+}
+
+
+/** artiatas **/
+
+.album-information .album-artists {
+  display: flex;
+  align-items: center;
+}
+
+.album-information .artists-pictures {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  width: 100%;
+}
+
+.album-information .artist-picture {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.album-information .artist-picture:hover::after {
+  animation: showArtistNameHover .1s forwards;
+  box-sizing: border-box;
+  content: attr(data-artist-name);
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -35px);
+  font-size: 13px;
+  background: rgb(65, 65, 65);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  width: max-content;
+}
+
+@keyframes showArtistNameHover {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
+
+.album-information .artist-picture img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+/** musica, tempo, release...*/
+
+.album-information .album-details span {
+  margin-right: 10px;
+  color: rgb(120, 120, 120);
+  font-size: 14px;
+}
+
+.album-information .album-details span:not(:last-child)::after {
+  content: '·';
+  margin-left: 10px;
+}
+
+
+/** HEADER DAS MUSICAS **/
+.album-song-header {
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  margin-bottom: -30px;
+  position: sticky;
+  top: 90px;
+  background-color: rgb(35, 35, 35);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+  border-top: 1px solid rgb(65, 65, 65);
+  border-bottom: 1px solid rgb(65, 65, 65);
+  z-index: 1;
+}
+
+.album-song-header span:first-child {
+  text-align: center;
+}

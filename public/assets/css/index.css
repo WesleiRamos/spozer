@@ -1,0 +1,14 @@
+@import url('https://unpkg.com/range-slider-element@latest/dist/styles.css');
+@import url('./default.css');
+@import url('./menu.css');
+@import url('./player.css');
+@import url('./content.css');
+@import url('./dashboard/dashboard.css');
+@import url('./dashboard/my-songs.css');
+@import url('./dashboard/my-albuns.css');
+@import url('./dashboard/add-song.css');
+@import url('./artist/artist.css');
+@import url('./album/album.css');
+@import url('./playlist/playlist.css');
+@import url('./user/user.css');
+@import url('./progress.css');

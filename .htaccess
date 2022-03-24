@@ -1,0 +1,24 @@
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+  # Os arquivos de media só deverão ser acessados por acesso indireto
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f 
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^media/(.*)/(.*) public/media.php?media_type=$1&media_file=$2
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{QUERY_STRING} ^(.*)$
+  RewriteRule ^api/(.*)$ api/index.php?route_include=$1&%1 [NC,L,QSA]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(login|register|logout)$ $1.php [NC,L,QSA]
+
+  RewriteBase /
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
+</IfModule>

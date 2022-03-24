@@ -1,0 +1,51 @@
+h2.title {
+  margin: 20px 0;
+  font-size: 40px;
+  user-select: none;
+}
+
+.horizontal-menu {
+  display: grid;
+  position: sticky;
+  top: 92px;
+  grid-template-columns: repeat(3, 200px);
+  background-color: rgb(35, 35, 35);
+  z-index: 1;
+}
+
+.horizontal-menu .menu-item {
+  border-bottom: 2px solid rgb(90, 90, 90);
+  color: rgb(190, 190, 190);
+  cursor: pointer;
+  display: inline-flex;
+  padding: 5px;
+  margin-right: 5px;
+  transition: .2s;
+  border-radius: 5px 5px 0 0;
+  user-select: none;
+}
+
+.horizontal-menu .menu-item.active {
+  color: #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+  background-color: rgb(70, 70, 70);
+}
+
+.horizontal-menu .menu-item:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.horizontal-menu .menu-item i {
+  margin-right: 10px;
+}
+
+.table-head {
+  color: rgb(150, 150, 150);
+  top: 130px;
+  padding: 10px 0;
+  padding-top: 20px;
+  font-size: 14px;
+  position: sticky;
+  text-transform: uppercase;
+  background-color: rgb(35, 35, 35);
+}

@@ -1,0 +1,54 @@
+.my-albuns .album,
+.my-albuns .table-head {
+  align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 80px repeat(2, 1fr) 100px 60px;
+}
+
+.my-albuns .table-head {
+  padding-top: 10px;
+}
+
+.my-albuns .album {
+  margin-bottom: 10px;
+}
+
+.my-albuns .artwork {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.my-albuns .tools {
+  box-sizing: border-box;
+  display: grid;
+  padding: 10px 0;
+  padding-right: 20px;
+  grid-template-columns: 100px;
+}
+
+.modal-content {
+  max-width: 900px;
+  width: 50vw;
+  min-width: 400px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.modal-content .preview {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  overflow: hidden;
+  background-color: rgb(50, 50, 50);
+}
+
+.modal-content .preview img {
+  max-width: 100%;
+  max-height: 100%;
+}

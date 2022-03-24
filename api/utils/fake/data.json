@@ -1,0 +1,112 @@
+[
+  {
+    "id": "40",
+    "name": "Do I Wanna Know?",
+    "length": 266,
+    "favorite": false,
+    "background": "url(public/assets/images/artists/arctic-monkeys.png), linear-gradient(to right, #2973E3, #8B17FA)",
+    "album": {
+      "id": "39",
+      "name": "AM",
+      "artwork": "7c7405ae0d2c449890efea35298d0629"
+    },
+    "artists": [
+      {
+        "id": "30",
+        "artistic_name": "Arctic Monkeys"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Tá Rocheda",
+    "length": 205,
+    "favorite": false,
+    "background": "url(public/assets/images/artists/baroes-da-pisadinha.png), linear-gradient(to right, #FF4259, #3FE8D7)",
+    "album": {
+      "id": "40",
+      "name": "As Melhores 2018",
+      "artwork": "afaab070fd1c431cbce28bbd4882eec8"
+    },
+    "artists": [
+      {
+        "id": "19",
+        "artistic_name": "Barões da Pisadinha"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Bad Reputation (feat. Joe Janiak)",
+    "length": 206,
+    "favorite": false,
+    "background": "url(public/assets/images/artists/avicii.png), linear-gradient(to right, #FABD43, #8B17FA)",
+    "album": {
+      "id": "1",
+      "name": "Tim",
+      "artwork": "53176904b1694126b64c86331a419edf"
+    },
+    "artists": [
+      {
+        "id": "50",
+        "artistic_name": "Avicii"
+      },
+      {
+        "id": "63",
+        "artistic_name": "Joe Janiak"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Kings & Queens - MOTi Remix",
+    "length": 181,
+    "favorite": false,
+    "background": "url(public/assets/images/artists/ava-max.png), linear-gradient(to right, #2973E3, #3FE8D7)",
+    "album": {
+      "id": "3",
+      "name": "The Remixes",
+      "artwork": "0bba5ad647f649978092670394c64095"
+    },
+    "artists": [
+      {
+        "id": "38",
+        "artistic_name": "Ava Max"
+      },
+      {
+        "id": "10",
+        "artistic_name": "MOTi"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Feels (feat. Pharrell Williams, Katy Perry & Big Sean)",
+    "length": 223,
+    "favorite": false,
+    "background": "url(public/assets/images/artists/calvin-harris.png), linear-gradient(to right, #FF4259, #8B17FA)",
+    "album": {
+      "id": "38",
+      "name": "Feels (feat. Pharrell Williams, Katy Perry & Big Sean)",
+      "artwork": "d465d5c413004703bed5181b4c5a38cb"
+    },
+    "artists": [
+      {
+        "id": "12",
+        "artistic_name": "Calvin Harris"
+      },
+      {
+        "id": "37",
+        "artistic_name": "Pharrell Williams"
+      },
+      {
+        "id": "61",
+        "artistic_name": "Katy Perry"
+      },
+      {
+        "id": "62",
+        "artistic_name": "Big Sean"
+      }
+    ]
+  }
+]

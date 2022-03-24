@@ -1,0 +1,2 @@
+# Nada de acesso direto aos arquivos pasta
+Deny from all

@@ -1,0 +1,75 @@
+.user {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px 20px;
+  position: relative;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 250px 1fr;
+  z-index: 1;
+  user-select: none;
+}
+
+.user .user-picture {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  filter: drop-shadow(0 5px 10px rgb(20, 20, 20, 0.5));
+}
+
+.user .user-picture img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.user .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter: drop-shadow(0 10px 20px rgb(20, 20, 20, 0.7));
+}
+
+.user .information .user-name {
+  font-size: 70px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.user .information-verified span {
+  font-size: 20px;
+}
+
+.user .select-picture-modal {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  background: rgba(50, 50, 50, 0.7);
+  transition: .3s;
+}
+
+.user .user-picture:hover .select-picture-modal {
+  opacity: 1;
+}
+
+.user .select-picture-modal .material-icons {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+p.note {
+  color: white;
+  font-size: 12px;
+  margin: 20px 0;
+  text-align: justify;
+}
