@@ -8,8 +8,7 @@ Spozer é um projeto feito para disciplina de "Programação Web" do 3º períod
 
 Foi desenvolvido utilizando PHP e Vue.js, conta com cadastro de contas (usuário ou artista), cadastro de album e musica, busca por musica/artista/album, página do album e do artista e etc.
 
-### Algumas screenshots
-___
+## Algumas screenshots
 
 Estas são apenas algumas capturas de tela do Spozer, há outras na pasta screenshots.
 
